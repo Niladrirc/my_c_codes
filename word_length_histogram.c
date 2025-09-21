@@ -15,7 +15,8 @@ int main() {
 
     printf("\nHistogram Results: \n");
     for (int i=0; i<100; i++) {
-        printf("Length of word #%d: %d\n", i+1, wordLength[i]);
+        if (wordLength[i] != 0)
+            printf("Length of word #%d: %d\n", i+1, wordLength[i]);
     }
 
     return 0;
