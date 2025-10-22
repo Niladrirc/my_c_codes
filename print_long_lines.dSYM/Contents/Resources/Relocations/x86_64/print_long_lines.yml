@@ -1,9 +1,0 @@
----
-triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/apple/Workspace/my_c_codes/print_long_lines'
-relocations:
-  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _get_line, symObjAddr: 0x0, symBinAddr: 0x100000E00, symSize: 0xC0 }
-  - { offset: 0x33, size: 0x8, addend: 0x0, symName: _get_line, symObjAddr: 0x0, symBinAddr: 0x100000E00, symSize: 0xC0 }
-  - { offset: 0x77, size: 0x8, addend: 0x0, symName: _print_line, symObjAddr: 0xC0, symBinAddr: 0x100000EC0, symSize: 0x50 }
-  - { offset: 0xA9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x110, symBinAddr: 0x100000F10, symSize: 0x80 }
-...
