@@ -17,13 +17,32 @@ int string_to_number(char s[]) {
   return n;
 }
 
+int is_digit(char c) {
+  
+  int isdigit = c >= '0' && c <= '9';
+  return isdigit;
+
+}
+
+int string_to_number_2(char s[]) {
+
+  int i, n = 0;
+  for(i=0; is_digit(s[i]); i++) {
+    n = (10*n) + (s[i] - '0');
+  }
+
+  if (strlen(s) < i-1) return -1;
+
+  return n;
+}
+
 int main() {
   
   char input[100];
   printf("Enter your input here: ");
   scanf("%s", input);
 
-  int result = string_to_number(input);
+  int result = string_to_number_2(input);
 
   printf("Your input was: %s\n", input);
 
